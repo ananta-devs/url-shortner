@@ -17,7 +17,7 @@ This is a simple URL shortener application built with the MERN stack. It allows 
 **Server:**
 *   Node.js
 *   Express
-*   MongoDB
+*   Firebase
 
 ## Getting Started
 
