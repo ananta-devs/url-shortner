@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Global styles for the body */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  /* Background with gradient overlay and image */
+  background: linear-gradient(45deg, rgba(253, 239, 249, 0.8), rgba(227, 238, 255, 0.8)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main application container */
+.App {
+  text-align: center;
+}
+
+/* Header section styling (glass-morphism effect) */
+.App-header {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  animation: fadeIn 1s ease-in-out; /* Animation for header on load */
+}
+
+/* Keyframe animation for fading in elements */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Heading style */
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form layout */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Input field styling */
+input {
+  width: 300px;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Input focus effect */
+input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button styling */
+button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Result section styling */
+.result {
+  margin-top: 20px;
+  animation: slideIn 0.5s ease-in-out; /* Animation for result display */
+}
+
+/* Keyframe animation for sliding in elements */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Paragraph style within result */
+.result p {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+/* Shortened URL link style */
+.result a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  word-break: break-all;
+}
+
+/* Shortened URL link hover effect */
+.result a:hover {
+  text-decoration: underline;
+}
+
+/* Loader (spinner) styling */
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+/* Keyframe animation for spinner rotation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Copy button styling */
+.copy-button {
+  background-color: #28a745; /* Green color */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Copy button hover effect */
+.copy-button:hover {
+  background-color: #218838;
+}
+
+/* Copy success message styling */
+.copy-success-message {
+  color: #28a745; /* Green color */
+  margin-left: 10px;
+  font-size: 0.9rem;
+  animation: fadeOut 2s forwards; /* Animation for fading out message */
+}
+
+/* Keyframe animation for fading out */
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
