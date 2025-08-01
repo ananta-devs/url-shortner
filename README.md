@@ -46,12 +46,16 @@ To get a local copy up and running follow these simple example steps.
    cd server
    npm install
    ```
-4.  Start the client
+4.  Add security key of google cloud console
+   ```sh
+    serviceAccountKey.json
+   ```
+5.  Start the client
     ```sh
     cd client
     npm start
     ```
-5.  Start the server
+6.  Start the server
     ```sh
     cd server
     npm start
